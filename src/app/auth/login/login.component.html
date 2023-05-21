@@ -1,41 +1,81 @@
-<div class="flex">
-  <div class="m-auto">
-    <mat-toolbar color="primary">
-      <h1>Login page</h1>
-    </mat-toolbar>
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <mat-card>
-      <mat-card-content>
-        <mat-card-title><h1></h1></mat-card-title>
-        <mat-form-field>
-          <mat-label>Email</mat-label>
-          <input
-            matInput
-            type="email"
-            placeholder="Enter Email"
-            #box1
-            (keyup)="getEmail(box1.value)"
-          />
-        </mat-form-field>
-        <mat-divider></mat-divider>
-        <mat-form-field>
-          <mat-label>Password</mat-label>
-          <input
-            matInput
-            type="password"
-            placeholder="Enter password"
-            #box2
-            (keyup)="getPassword(box2.value)"
-          />
-        </mat-form-field>
-        <mat-divider></mat-divider>
-        <button (click)="login()" mat-flat-button type="submit" color="primary">
-          <span>Login</span>
-        </button>
-        <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
-      </mat-card-content>
-    </mat-card>
+<mat-toolbar color="primary">
+  <h1>Login page</h1>
+</mat-toolbar>
 
-    <button (click)="goBack()">Go Back</button>
+<body>
+  <div id="login">
+    <h3 class="text-center text-white pt-5">Login form</h3>
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <img
+            class="logo-container"
+            src="../../../assets/carpenter2.svg"
+            alt=""
+          />
+          <div id="login-box" class="col-md-12" style="margin-top: 30px">
+            <form id="login-form" class="form" action="" method="post">
+              <h3 class="text-center" style="font-weight: 800">Login</h3>
+              <div class="form-group">
+                <label for="username" style="font-weight: 400">Username:</label
+                ><br />
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password" style="font-weight: 400">Password:</label
+                ><br />
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="remember-me" class="text-info"
+                  ><span>Remember me</span> <span
+                    ><input
+                      id="remember-me"
+                      name="remember-me"
+                      type="checkbox" /></span></label
+                ><br />
+                <input
+                  style="display: inline"
+                  (click)="login()"
+                  type="submit"
+                  name="submit"
+                  class="btn btn-info btn-md"
+                  value="submit"
+                />
+                <button
+                  (click)="goBack()"
+                  style="margin-left: 280px"
+                  class="btn btn-info btn-md"
+                  value="submit"
+                  type="submit"
+                  name="submit"
+                >
+                  Home
+                </button>
+                <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</body>

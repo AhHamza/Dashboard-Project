@@ -1,3 +1,6 @@
+<mat-toolbar color="primary">
+  <h1>Welcome to Dashboard page</h1>
+</mat-toolbar>
 <mat-sidenav-container autosize>
   <mat-sidenav #sidenav mode="side" opened="isExpanded">
     <mat-nav-list>
@@ -48,9 +51,6 @@
 
   <!-- Content - rendered Content for the current router path into the <router-outlet>, e.g. /dashboard or /info-->
   <mat-sidenav-content>
-    <mat-toolbar>
-      <h1>Welcome to Dashboard page</h1>
-    </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

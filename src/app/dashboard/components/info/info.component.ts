@@ -7,13 +7,23 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+  isLoading:boolean = false
 
+
+ngOnInit(): void {
+}
   constructor(private router:Router) { }
   goBack(): void {
     this.router.navigate(['/sidenavwrapper']);
 
 }
-  ngOnInit(): void {
-  }
+signout(){
+  this.isLoading = true
+  // sign out using authintication
+setTimeout(()=>{
+this.router.navigate(['/home'])
+
+  },2000)
+}
 
 }

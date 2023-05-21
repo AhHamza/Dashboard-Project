@@ -9,6 +9,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
+<mat-toolbar color="primary"><h1>Home Page</h1> </mat-toolbar>
+
 <mat-sidenav-container autosize>
   <mat-sidenav #sidenav mode="side" opened="isExpanded">
     <mat-nav-list>
@@ -35,13 +37,17 @@
 
   <!-- Content - rendered Content for the current router path into the <router-outlet>, e.g. /dashboard or /info-->
   <mat-sidenav-content>
-    <mat-toolbar> </mat-toolbar>
-
-    <div
-      class="bg-image d-flex justify-content-center align-items-center"
-      style=""
-    >
-      <h1 style="font-size: xxx-large">Shakoosh</h1>
+    <div class="bg-image">
+      <h1
+        style="
+          font-size: 120px;
+          color: white;
+          position: right;
+          padding-top: 12%;
+        "
+      >
+        Shakoosh
+      </h1>
     </div>
 
     <div class="aboutus-section">
@@ -66,7 +72,7 @@
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="aboutus-banner">
               <img
-                src="./assets/images/logo_non_transparent_curved.png"
+                src="../../../../assets/logo_non_transparent_curved.png"
                 alt=""
               />
             </div>

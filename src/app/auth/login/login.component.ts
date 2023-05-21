@@ -12,6 +12,7 @@ export class LoginComponent  {
   isLoading:boolean = false
   email:string
   password:string
+  phoneNumber:string
   public isNavigating = false;
 
  
@@ -26,9 +27,11 @@ export class LoginComponent  {
   //for saeed : give email and password to database from here
   login(){
     this.isLoading = true
-    //// if email and password matches the database then navigate
     console.log(this.email)
     console.log(this.password)
+    console.log(this.phoneNumber)
+    
+    //// if email and password matches the database then navigate
     setTimeout(()=>{
     this.router.navigate(['/sidenavwrapper']) //for nabil: type name of dashboard to the component so that the router goes there
     },2000)
@@ -40,6 +43,9 @@ export class LoginComponent  {
   }
   getPassword(password:string){
     this.password = password
+  }
+  getPhoneNumber(phoneNumber:string){
+  this.phoneNumber = phoneNumber
   }
 
   goBack(): void {
