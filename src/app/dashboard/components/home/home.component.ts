@@ -16,17 +16,6 @@ export class HomeComponent {
     emailjs.sendForm('service_o7s0jlv', 'template_usmjp3c', e.target as HTMLFormElement, 'AQti0Uc4nYeocz2Sy')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
-       const inputName = document.getElementById("user_name")  as HTMLInputElement |null
-       const inputEmail =document.getElementById("user_email") as HTMLInputElement |null
-       const inputMessage =document.getElementById("message") as HTMLInputElement |null
-       if(inputName !=null)
-        console.log(inputName.value);
-
-        if(inputEmail !=null)
-          console.log(inputEmail.value);
-
-        if(inputMessage !=null)
-          console.log(inputMessage.value);
 
       }, (error) => {
         console.log(error.text);
