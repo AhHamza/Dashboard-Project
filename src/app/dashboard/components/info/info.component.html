@@ -59,6 +59,7 @@
                   (click)="goBack()"
                   type="submit"
                   color="primary"
+                  style="background-color: rgb(31, 176, 212); color: white"
                   mat-flat-button
                 >
                   Back to Dashboard
@@ -66,10 +67,14 @@
                 <!-- add logic to signout to route to home page after signing out -->
                 <button
                   (click)="signout()"
-                  style="float: right"
                   mat-flat-button
                   type="submit"
                   color="primary"
+                  style="
+                    background-color: rgb(31, 176, 212);
+                    color: white;
+                    margin-left: 60px;
+                  "
                 >
                   Signout
                 </button>
