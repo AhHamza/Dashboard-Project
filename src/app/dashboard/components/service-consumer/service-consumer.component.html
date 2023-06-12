@@ -18,10 +18,26 @@
     <td mat-cell *matCellDef="let element">{{ element.last_name }}</td>
   </ng-container>
 
-  <ng-container matColumnDef="locations">
+  <!-- <ng-container matColumnDef="locations">
     <th mat-header-cell *matHeaderCellDef>locations</th>
-    <td mat-cell *matCellDef="let element">{{ element.locations }}</td>
-  </ng-container>
+    <td mat-cell *matCellDef="let element">
+      <ng-container
+        *ngIf="
+          (element.locations[0]._lat !== undefined ||
+            element.locations[0]._long !== undefined) &&
+          element.locations[0].geo === null
+        "
+      >
+        {{
+          "latitude: " +
+            element.locations[0]._lat +
+            " , " +
+            "longtitude: " +
+            element.locations[0]._long
+        }}
+      </ng-container>
+    </td>
+  </ng-container> -->
 
   <ng-container matColumnDef="number_of_raters">
     <th mat-header-cell *matHeaderCellDef>number_of_raters</th>

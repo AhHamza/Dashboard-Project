@@ -21,7 +21,6 @@ export class RequestTableComponent implements OnInit {
 
   goBack(): void {
     this.router.navigate(['/sidenavwrapper']);
-
 }
 
   requestTableDetails = {
@@ -34,7 +33,6 @@ export class RequestTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.db.collection('request').valueChanges().subscribe(val=>console.log(val))
-
   }
 
   displayedColumns = ['client_id','date','details','worker_id','location']
@@ -50,6 +48,8 @@ export class RequestTableComponent implements OnInit {
   export class requestTableDataSource extends DataSource<any> {
     constructor(private requestTable : RequestTableService){
       super()
+    let json = JSON
+
     }
   
     connect(collectionViewer: CollectionViewer): Observable<any[]> {

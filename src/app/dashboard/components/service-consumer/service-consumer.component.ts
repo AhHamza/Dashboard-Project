@@ -43,7 +43,7 @@ export class ServiceConsumerComponent implements OnInit {
     'email',
     'first_name',
     'last_name',
-    'locations',
+    // 'locations',
     'number_of_raters',
     'phone_number',
     'rate_ratio'
