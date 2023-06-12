@@ -62,7 +62,6 @@ this.serviceProvider.deleteServiceProvider(id)
     'phone_number',
     'profession',
     'rate_ratio',
-    'is_active',
     'actions'
     
   ]

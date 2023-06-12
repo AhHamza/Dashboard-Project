@@ -7,6 +7,8 @@
   />
 </mat-form-field>
 
+<br />
+
 <mat-form-field>
   <input
     matInput
@@ -15,6 +17,7 @@
     [(ngModel)]="serviceProviderTableDetails.last_name"
   />
 </mat-form-field>
+<br />
 
 <mat-form-field>
   <input
@@ -24,15 +27,7 @@
     [(ngModel)]="serviceProviderTableDetails.email"
   />
 </mat-form-field>
-
-<mat-form-field>
-  <input
-    matInput
-    col
-    placeholder="password"
-    [(ngModel)]="serviceProviderTableDetails.password"
-  />
-</mat-form-field>
+<br />
 
 <mat-form-field>
   <input
@@ -42,24 +37,7 @@
     [(ngModel)]="serviceProviderTableDetails.national_id"
   />
 </mat-form-field>
-
-<mat-form-field>
-  <input
-    matInput
-    col
-    placeholder="active_zone"
-    [(ngModel)]="serviceProviderTableDetails.active_zone"
-  />
-</mat-form-field>
-
-<mat-form-field>
-  <input
-    matInput
-    col
-    placeholder="available_spots"
-    [(ngModel)]="serviceProviderTableDetails.available_spots"
-  />
-</mat-form-field>
+<br />
 
 <mat-form-field>
   <input
@@ -69,24 +47,7 @@
     [(ngModel)]="serviceProviderTableDetails.profession"
   />
 </mat-form-field>
-
-<mat-form-field>
-  <input
-    matInput
-    col
-    placeholder="number_of_raters"
-    [(ngModel)]="serviceProviderTableDetails.rate_ratio"
-  />
-</mat-form-field>
-
-<mat-form-field>
-  <input
-    matInput
-    col
-    placeholder="rate_ratio"
-    [(ngModel)]="serviceProviderTableDetails.rate_ratio"
-  />
-</mat-form-field>
+<br />
 
 <button mat-raised-button (click)="addServiceProvider()">Add</button>
 
@@ -139,11 +100,6 @@
   <ng-container matColumnDef="rate_ratio">
     <th mat-header-cell *matHeaderCellDef>rate_ratio</th>
     <td mat-cell *matCellDef="let element">{{ element.rate_ratio }}</td>
-  </ng-container>
-
-  <ng-container matColumnDef="is_active">
-    <th mat-header-cell *matHeaderCellDef>is_active</th>
-    <td mat-cell *matCellDef="let element">{{ element.is_active }}</td>
   </ng-container>
 
   <ng-container matColumnDef="actions">

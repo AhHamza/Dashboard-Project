@@ -25,7 +25,7 @@ export class ReviewTableComponent implements OnInit {
 
   }
 
-  displayedColumns = ['client_id','worker_id']
+  displayedColumns = ['client_id','worker_id','review']
 
 
 

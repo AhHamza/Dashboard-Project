@@ -38,17 +38,13 @@ export class ServiceProviderComponent implements OnInit {
     this.db.collection('service_provider').valueChanges().subscribe(val=>console.log(val))
   }
   displayedColumns=[
-    'active_zone',
-    'available_spots',
     'email',
     'first_name',
     'last_name',
     'national_id',
     'number_of_raters',
-    'password',
     'phone_number',
     'profession',
-    'profile_pic_url',
     'rate_ratio',
     'actions'
   ]

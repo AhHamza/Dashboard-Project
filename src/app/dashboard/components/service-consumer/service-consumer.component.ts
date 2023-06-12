@@ -45,7 +45,6 @@ export class ServiceConsumerComponent implements OnInit {
     'last_name',
     'locations',
     'number_of_raters',
-    'password',
     'phone_number',
     'rate_ratio'
     ]
