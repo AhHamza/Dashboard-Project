@@ -21,6 +21,6 @@ export class AppointmentTableService implements OnInit {
   }
 
   getAppointments(){
-    return this.db.collection('appointment',ref =>ref.orderBy('request_id')).valueChanges()
+    return this.db.collection('appointment',ref =>ref.orderBy('client_id')).valueChanges()
   }
 }

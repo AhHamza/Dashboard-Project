@@ -38,6 +38,7 @@ export class ServiceProviderComponent implements OnInit {
     this.db.collection('service_provider').valueChanges().subscribe(val=>console.log(val))
   }
   displayedColumns=[
+    'creation_date',
     'email',
     'first_name',
     'last_name',
