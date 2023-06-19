@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<!-- Edited By Nabil  -->
 <link
   href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
   rel="stylesheet"
@@ -7,6 +9,12 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+  rel="stylesheet"
+/>
 
 <mat-toolbar
   class="d-flex justify-content-between px-5 align-items-center text-white"
@@ -25,28 +33,25 @@
 <!-- start About US -->
 
 <div id="about" class="aboutus-section bg-warning bg-opacity-25 vh-100 py-5">
-  <div class="container-lg py-5 mt-5">
+  <div class="container-lg pt-5 mt-5">
     <div class="row p-3 d-flex justify-content-between align-items-center">
       <div class="col-md-6 py-3">
         <div class="aboutus d-flex align-items-center">
           <div class="">
             <h2 class="aboutus-title">About Us</h2>
             <p class="aboutus-text lead">
-              In many countries, people count on private agencies or companies
-              to provide them with professional electricians, plumbers,
-              carpenters or painters. On the other hand, there are still
-              countries where craftsmen or tradesmen work as individuals with
-              direct connection to their clients. We focus on this segment of
-              craftsmen and the society around them.
+              In numerous nations, individuals rely on agencies for skilled
+              services, while elsewhere, tradespeople work independently,
+              directly with clients. Our focus is on this craftsman segment and
+              their community.
             </p>
+            <br />
             <p class="aboutus-text lead">
-              Before creating this app there were several problems and some of
-              these problems was that there were unstable craftsmanship jobs for
-              workers, unavailability of the good reputation craftsmen,
-              possibility of dealing with inexperienced and untrained craftsmen,
-              low quality services, exploitation or unfairly high costs, lack of
-              pricing agreement in advance, security issues (i.e. ordering
-              craftsmen with criminal record).
+              Before the app, challenges encompassed unstable employment,
+              scarcity of reputable craftsmen, risks of engaging untrained
+              workers, subpar services, exploitative pricing, absence of
+              pre-agreed pricing, and safety concerns, such as employing
+              individuals with criminal records.
             </p>
             <a
               class="aboutus-more mt-3 mr-5 text-uppercase"
@@ -66,18 +71,14 @@
               <i class="fa-solid fa-gear fa-spin fs-1"></i>
             </div>
             <div class="feature-content col-lg-10 col-md-9">
-              <h2 class="fw-bold">The app provides</h2>
-              <!-- <p class="text-muted">
-              </p> -->
-
-              <p>
-                ● It saves clients time by providing them with the craftsman
-                sooner as possible.
-              </p>
-              <p>
-                ● Provide more jobs to the workers, which lead to a stable
-                income.
-              </p>
+              <h2 class="fw-bold">Our app provides</h2>
+              <ul class="text-muted lead">
+                <li>App swiftly links clients to craftsmen, time-efficient.</li>
+                <li>
+                  Increases job opportunities, resulting in stable income for
+                  workers.
+                </li>
+              </ul>
             </div>
           </div>
           <div class="row feature-box">
@@ -88,29 +89,23 @@
             </div>
             <div class="feature-content col-lg-10 col-md-9">
               <h2 class="fw-bold">Reliable services</h2>
-              <!-- <p class="text-muted">
-                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
-                eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                dapibus in. Aenean vulputate eleifend tellus.
-              </p> -->
-              <p>● Ratings and reviews will increase the service quality.</p>
-              <p>● The competitive environment will reduce costs.</p>
+              <ul class="text-muted lead">
+                <li>The competitive environment will reduce costs</li>
+                <li>Ratings and reviews will increase the service quality</li>
+              </ul>
             </div>
           </div>
           <div class="row feature-box">
             <div
-              class="iconset col-lg-2 col-md-3 d-flex border-1 rounded-circle justify-content-center align-items-center"
+              class="iconset col-lg-2 col-md-3 d-flex rounded-circle justify-content-center align-items-center"
             >
               <i class="fa-solid fa-gear fa-spin fs-1"></i>
             </div>
             <div class="feature-content col-lg-10 col-md-9">
               <h2 class="fw-bold">Great support</h2>
-              <!-- <p class="text-muted">
-                Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
-                eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                dapibus in. Aenean vulputate eleifend tellus.
-              </p> -->
-              <p>● The app provides great support for the community</p>
+              <ul class="text-muted lead">
+                <li>The app provides great support for the community</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -118,75 +113,130 @@
     </div>
   </div>
 </div>
-<!--Note ! the contacted email is : "ahmed7okka@gmail.com" -->
-<h1>Contact Us</h1>
 
-<section
-  class="border p-4 d-flex justify-content-center mb-4 contact-form"
-  (submit)="sendEmail($event)"
->
-  <form id="form" class="text-center" style="width: 100%; max-width: 300px">
-    <h2>Contact us</h2>
+<!-- <h2>Contact Us</h2> -->
+<!-- 
+ <section class="container-lg p-4 vh-100 bg-opacity-100" (submit)="sendEmail($event)">
 
-    <!-- Name input -->
-    <mdb-form-control class="mb-4">
-      <input
-        mdbInput
-        type="text"
-        id="name"
-        class="form-control"
-        name="user_name"
-      />
-      <label mdbLabel class="form-label" for="name">Name</label>
-    </mdb-form-control>
-    <!-- Email input -->
-    <mdb-form-control class="mb-4">
-      <input
-        mdbInput
-        type="email"
-        id="email"
-        class="form-control"
-        name="user_email"
-      />
-      <label mdbLabel class="form-label" for="email">Email address</label>
-    </mdb-form-control>
-    <!-- Subject input -->
-    <mdb-form-control class="mb-4">
-      <input
-        mdbInput
-        type="text"
-        id="subject"
-        class="form-control"
-        name="subject"
-      />
-      <label mdbLabel class="form-label" for="subject">Subject</label>
-    </mdb-form-control>
-    <!-- Message input -->
-    <mdb-form-control class="mb-4">
-      <textarea
-        mdbInput
-        name="message"
-        class="form-control"
-        id="message"
-        rows="4"
-      ></textarea>
-      <label mdbLabel class="form-label" for="message">Message</label>
-    </mdb-form-control>
-    <!-- Mail copy -->
-    <div class="form-check">
-      <input
-        mdbCheckbox
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="copy"
-      />
-      <label class="form-check-label" for="copy"> Send me copy </label>
+
+  <div class="row title bg-danger p-3 d-flex justify-content-center align-items-center text-center position-relative">
+    <h2 class="text-uppercase fw-bolder">Contact</h2>
+    <h4 class="text-uppercase position-absolute fw-bolder">Get In Touch</h4>
+  </div> -->
+
+<!--Section: Contact v.2-->
+<section class="mb-4 p-4 pt-5 container-lg vh-100" (submit)="sendEmail($event)">
+  <!--Section heading-->
+  <!-- <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2> -->
+  <!--Section description-->
+  <div
+    class="row title p-3 mb-3 d-flex justify-content-center align-items-center text-center position-relative"
+  >
+    <h2 class="text-uppercase fw-bolder">Contact</h2>
+    <h4 class="text-uppercase position-absolute fw-bolder">Get In Touch</h4>
+  </div>
+  <p class="text-center w-responsive mx-auto mb-5 lead">
+    Do you have any questions? Please do not hesitate to contact us directly.
+    Our team will come back to you within a matter of hours to help you.
+  </p>
+
+  <div class="row p-4 mt-3">
+    <!--Grid column-->
+    <div class="col-md-7 mb-md-0 mb-5 p-4">
+      <form id="form contact-form">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="name" name="name" class="form-control" />
+              <label for="name" class="form-label">Your name</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" id="email" name="email" class="form-control" />
+              <label for="email" class="">Your email</label>
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="md-form mb-0">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control"
+              />
+              <label for="subject" class="">Subject</label>
+            </div>
+          </div>
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea
+                type="text"
+                id="message"
+                name="message"
+                rows="2"
+                class="form-control md-textarea"
+              ></textarea>
+              <label for="message">Your message</label>
+            </div>
+          </div>
+        </div>
+        <!--Grid row-->
+      </form>
+
+      <div class="text-center text-md-left">
+        <a
+          class="btn btn-primary"
+          onclick="document.getElementById('contact-form').submit();"
+          >Send</a
+        >
+      </div>
+      <div class="status"></div>
     </div>
-    <!-- Submit button -->
-    <input class="btn btn-primary my-4" type="submit" value="Send" />
-  </form>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-4 text-center offset-1">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+          <p>San Francisco, CA 94126, USA</p>
+        </li>
+
+        <li>
+          <i class="fas fa-phone mt-4 fa-2x"></i>
+          <p>+ 01 234 567 89</p>
+        </li>
+
+        <li>
+          <i class="fas fa-envelope mt-4 fa-2x"></i>
+          <p>contact@mdbootstrap.com</p>
+        </li>
+      </ul>
+    </div>
+    <!--Grid column-->
+  </div>
 </section>
+<!--Section: Contact v.2-->
+
+<!-- </section> -->
 
 <!-- <section id="contact" class="contact mt-5 vh-100">
 <div class="layer bg-warning ">
@@ -204,6 +254,25 @@
   </div>
 </div>
 </section> -->
+
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ -->
 
 <footer class="m-auto bg-dark bg-opacity-50">
   <div class="container text-center p-2">

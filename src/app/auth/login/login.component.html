@@ -76,24 +76,6 @@
                   </button>
                 </div>
 
-                <input
-                  style="display: inline"
-                  (click)="login()"
-                  type="submit"
-                  name="submit"
-                  class="btn btn-info btn-md"
-                  value="submit"
-                />
-                <button
-                  (click)="goBack()"
-                  style="margin-left: 280px"
-                  class="btn btn-info btn-md"
-                  value="submit"
-                  type="submit"
-                  name="submit"
-                >
-                  Home
-                </button>
                 <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
               </div>
             </form>
