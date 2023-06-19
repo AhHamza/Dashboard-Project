@@ -10,13 +10,11 @@ import emailjs,{EmailJSResponseStatus} from '@emailjs/browser'
 export class HomeComponent {
 
   isExpanded: boolean = false;
-
   public sendEmail(e: Event) {
     e.preventDefault();
-    emailjs.sendForm('service_o7s0jlv', 'template_usmjp3c', e.target as HTMLFormElement, 'AQti0Uc4nYeocz2Sy')
+    emailjs.sendForm('service_haui2sl', 'template_081j89j', e.target as HTMLFormElement, 'TAmymcktNtkXUxlUN')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
-
       }, (error) => {
         console.log(error.text);
       });

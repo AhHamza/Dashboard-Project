@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <link
   href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
   rel="stylesheet"
@@ -6,32 +8,30 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<mat-toolbar style="background-color: rgb(31, 176, 212); color: white">
+<mat-toolbar class="bg-primary text-white">
   <h1>Login page</h1>
 </mat-toolbar>
 
 <body>
-  <div id="login">
-    <h3 class="text-center text-white pt-5">Login form</h3>
-    <div class="container">
+  <div id="login" class="">
+    <h3 class="text-center text-dark fs-2 pb-0 mb-0">Login form</h3>
+    <div class="container  mh-100 mt-5">
       <div id="login-row" class="row justify-content-center align-items-center">
         <div id="login-column" class="col-md-6">
-          <img
-            class="logo-container"
+           <img
+            class="logo-container w-25 d-block m-auto"
             src="../../../assets/carpenter2.svg"
-            alt=""
-          />
-          <div id="login-box" class="col-md-12" style="margin-top: 30px">
+            alt=""/>
+          <div id="login-box" class="col-md-12 mt-2">
             <form id="login-form" class="form" action="" method="post">
-              <h3 class="text-center" style="font-weight: 800">Login</h3>
+              <h3 class="text-center fs-2 fw-bold">Login</h3>
               <div class="form-group">
                 <label for="username" style="font-weight: 400">Username:</label
                 ><br />
                 <input
                   type="text"
-                  name="email"
-                  id="email"
-                  #email
+                  name="username"
+                  id="username"
                   class="form-control"
                 />
               </div>
@@ -39,10 +39,9 @@
                 <label for="password" style="font-weight: 400">Password:</label
                 ><br />
                 <input
-                  type="password"
+                  type="text"
                   name="password"
                   id="password"
-                  #password
                   class="form-control"
                 />
               </div>
@@ -54,24 +53,27 @@
                       name="remember-me"
                       type="checkbox" /></span></label
                 ><br />
-                <input
-                  style="display: inline"
-                  (click)="login()"
-                  type="submit"
-                  name="submit"
-                  class="btn btn-info btn-md"
-                  value="submit"
-                />
+                <div class="row justify-content-between px-3">
+                  <button 
+                  (click)="login()" 
+                  type="submit" 
+                  name="submit" 
+                  class="btn btn-info btn-md col-3 text-uppercase" 
+                  value="submit">
+                  Submit <i class="fa-solid fa-right-to-bracket fa-beat"></i>
+                </button>
+
                 <button
                   (click)="goBack()"
-                  style="margin-left: 280px"
-                  class="btn btn-info btn-md"
+                  class="btn btn-info btn-md col-3"
                   value="submit"
                   type="submit"
-                  name="submit"
-                >
-                  Home
+                  name="submit">
+                  Home <i class="fa-solid fa-house fa-bounce"></i>
                 </button>
+
+                </div>
+                
                 <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
               </div>
             </form>
