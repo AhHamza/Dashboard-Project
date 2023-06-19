@@ -27,7 +27,7 @@ mat-toolbar h4:hover{
 
 .bg-image{
   background-attachment: fixed;
-  background-image: url('../../../../assets/bk.jpeg');
+  background-image: url('../../../../assets/bk2.jpg');
   background-size:cover;
   background-position: center center;
 
@@ -92,8 +92,17 @@ a:hover {
 
 
 //  start new contact 
-#contact h3{
-    font-size: 24px;
+.title h2{
+    font-size: 85px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #5e57572c;
+    letter-spacing:15px;
+}
+
+.title h4{
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
 }
 .contact .layer{
     background-color: rgba(244,195,66, 0.6);
@@ -130,7 +139,7 @@ a:hover {
     font-size: 25px;
 }
 
-.social:hover, .send:hover , .aboutus-title:hover{
+.social:hover, .send:hover , .aboutus-title:hover, #form h2{
     cursor: pointer;
 }
 

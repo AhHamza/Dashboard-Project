@@ -1,0 +1,13 @@
+(home page)
+-fill the the aboutus in home page !!
+-make signin logo in toolbar clickable and bigger
+
+
+-create logic of login pAge, and design it well
+-after creating login page put user of the dashboard in the info page including(username,email,number) from the admin collection ,
+ put in the info page the email address the admin
+and a sign out button which will navigate me to the home
+
+-
+-put a new background picture between about us and contact us that is identical to the above background pic
+-do some style for each page of the dashboard (make a local css class and style it and put it in each page)
