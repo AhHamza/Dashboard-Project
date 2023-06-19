@@ -38,7 +38,7 @@ export class AppointmentTableComponent implements OnInit {
   }
 
 
-  displayedColumns = ['appointment_date','create_date','id','client_id','worker_id','details','apartemnt_number','building_number','city','floor_number']
+  displayedColumns = ['appointment_date','create_date','appointment_id','client_id','worker_id','details','apartemnt_number','building_number','city','floor_number']
 
 
 
