@@ -59,6 +59,46 @@
 </mat-form-field>
 <br />
 
+<mat-form-field>
+  <input
+    matInput
+    col
+    placeholder="phone_number"
+    [(ngModel)]="serviceProviderTableDetails.phone_number"
+  />
+</mat-form-field>
+<br />
+
+<mat-form-field>
+  <input
+    matInput
+    col
+    placeholder="number_of_raters"
+    [(ngModel)]="serviceProviderTableDetails.number_of_raters"
+  />
+</mat-form-field>
+<br />
+
+<mat-form-field>
+  <input
+    matInput
+    col
+    placeholder="rate_ratio"
+    [(ngModel)]="serviceProviderTableDetails.rate_ratio"
+  />
+</mat-form-field>
+<br />
+
+<mat-form-field>
+  <input
+    matInput
+    col
+    placeholder="creation_date"
+    [(ngModel)]="serviceProviderTableDetails.creation_date"
+  />
+</mat-form-field>
+<br />
+
 <button mat-raised-button (click)="addServiceProvider()">Add</button>
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">

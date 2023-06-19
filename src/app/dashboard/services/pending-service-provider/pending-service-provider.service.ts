@@ -38,7 +38,6 @@ export class PendingServiceProviderService {
    addServiceProvider(serviceProviderTableDetails:any){
     this.db.collection('service_provider').add(serviceProviderTableDetails).then((docRef)=>{
       console.log('New document added with ID:', docRef.id);
-
       const docId = docRef.id;
       const docToUpdate = this.db.collection('service_provider').doc(docId);
       docToUpdate.update({ id: docId })

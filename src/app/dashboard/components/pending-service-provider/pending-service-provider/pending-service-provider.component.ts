@@ -32,6 +32,7 @@ export class PendingServiceProviderComponent implements OnInit {
     profession:'',
     profile_pic_url:'',
     rate_ratio:'',
+    creation_date:'',
     is_active:false
   }
 
