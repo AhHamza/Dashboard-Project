@@ -27,7 +27,7 @@ mat-toolbar h4:hover{
 
 .bg-image{
   background-attachment: fixed;
-  background-image: url('../../../../assets/bk2.jpg');
+  background-image: url('../../../../assets/bk.jpeg');
   background-size:cover;
   background-position: center center;
 
@@ -93,7 +93,7 @@ a:hover {
 
 //  start new contact 
 .title h2{
-    font-size: 85px;
+    font-size: 90px;
     font-family: 'Bebas Neue', sans-serif;
     color: #5e57572c;
     letter-spacing:15px;
@@ -104,27 +104,25 @@ a:hover {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 5px;
 }
-.contact .layer{
-    background-color: rgba(244,195,66, 0.6);
-}
+
 
 .contact .send{
     position: relative;
 }
 
-.contact .send::after {
+ .contact .send::after {
     content: "";
-    background: #fdb801 none repeat scroll 0 0;
-    bottom: 0;
+    background-color: rgb(0, 119, 255);
+    top: calc(100% + 2px);
     height: 2px;
     left: 0;
     position: absolute;
-    width: 5%;
-    transition: all 1s;
-} 
+    width: 5rem;
+    transition: width 0.5s ease-out;
+}
 
-.send:hover::after{
-     width: 40%;
+ .contact .send:hover::after{
+    width: 13rem;
 }
 
 .contact .social
@@ -134,13 +132,16 @@ a:hover {
     border: 3px solid rgb(0, 119, 255);
     margin: 0px 5px;
 }
+.social:hover, .send:hover , .aboutus-title:hover, #form h2{
+    cursor: pointer;
+}
 
 .contact .social-icon i{
     font-size: 25px;
 }
 
-.social:hover, .send:hover , .aboutus-title:hover, #form h2{
-    cursor: pointer;
+.social:hover i{
+    font-size: 30px;
 }
 
 .social:hover .fa-facebook{
@@ -151,25 +152,17 @@ a:hover {
 .social:hover .fa-instagram{
     color: #E1306C; 
     font-size: 30px;
-
 }
 
 .social:hover .fa-twitter{
     color: #1C9CEA;
     font-size: 30px;
-
 }
 
 .social:hover .fa-linkedin{
     color: #0579B6;
     font-size: 30px;
-
 }
 
 
 // end new contact
-
-footer
-{
-    // background-color: rgba(244,195,66, 0.6);
-}
